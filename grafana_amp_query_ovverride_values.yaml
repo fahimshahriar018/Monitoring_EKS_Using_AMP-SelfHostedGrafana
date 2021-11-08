@@ -1,0 +1,8 @@
+serviceAccount:
+    name: "EKS-AMP-service-account"
+    annotations:
+    ### Provide IAM Role ARN
+        eks.amazonaws.com/role-arn: "$SERVICE_ACCOUNT_IAM_ROLE_ARN}"
+grafana.ini:
+  auth:
+    sigv4_auth_enabled: true
